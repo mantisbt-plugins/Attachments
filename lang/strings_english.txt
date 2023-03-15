@@ -1,0 +1,4 @@
+<?php
+$s_attachments_plugin_title = 'Re-instate Attachment section';
+$s_add_file_button = 'Upload selected file';
+
