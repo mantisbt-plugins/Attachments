@@ -1,0 +1,3 @@
+Version: 1.00 #
+Devurl: http://www.nuy.info/mantisplugins/CheckPlugin/version.txt #
+Location: http://www.nuy.info/mantisplugins/CheckPlugin/latest.zip #
