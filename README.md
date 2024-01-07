@@ -1,7 +1,7 @@
 ########################################################
 # 	Mantis Bugtracker Add-On
-# 	Attachments version 2.01
-#	2021 plugin by Cas Nuy www.NUY.info
+# 	Attachments version 2.04
+#	2021-2024 plugin by Cas Nuy www.NUY.info
 ########################################################
 To be used only with Mantis 2.x
 This plugin allows to re-instate the attachments section and to upload attachments without a note.
