@@ -90,6 +90,23 @@ if( $t_allow_file_upload ) {
 </div>
 </div>
 
+<?php
+/**
+ * Prints the list of visible attachments belonging to a given bug.
+ * @param integer $p_bug_id ID of the bug to print attachments list for.
+ * @param string $p_security_token The security token to use for deleting attachments.
+ * @return void
+ */
+function print_bug_attachments_list( $p_bug_id, $p_security_token ) {
+	$t_attachments = file_get_visible_attachments( $p_bug_id );
+	echo "\n<ul>";
+	foreach ( $t_attachments as $t_attachment ) {
+		echo "\n<li>";
+		print_bug_attachment( $t_attachment, $p_security_token );
+		echo "\n</li>";
+	}
+	echo "\n</ul>";
+}
 
 
 

@@ -1,7 +1,7 @@
 ########################################################
 # 	Mantis Bugtracker Add-On
-# 	Attachments version 2.04
-#	2021-2024 plugin by Cas Nuy www.NUY.info
+# 	Attachments version 2.10
+#	2021 plugin by Cas Nuy www.NUY.info
 ########################################################
 To be used only with Mantis 2.x
 This plugin allows to re-instate the attachments section and to upload attachments without a note.
@@ -64,3 +64,8 @@ Fixed not showing the top-level attachment in the activity section
 # 	Attachments version 2.04
 ########################################################
 Fixed impact on alignment op following blocks
+
+########################################################
+# 	Attachments version 2.10
+########################################################
+Added removeed mantis function "function print_bug_attachments_list"
