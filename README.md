@@ -74,3 +74,8 @@ Fixed impact on alignment op following blocks
 # 	Attachments version 2.10
 ########################################################
 Added removed mantis function "function print_bug_attachments_list"
+
+########################################################
+# 	Attachments version 2.20
+########################################################
+Made this section available while ediiting an issue
