@@ -1,6 +1,6 @@
 ########################################################
 # 	Mantis Bugtracker Add-On
-# 	Attachments version 2.10
+# 	Attachments version 2.20
 #	2021 - 2024 plugin by Cas Nuy www.NUY.info
 ########################################################
 To be used only with Mantis 2.x
@@ -35,6 +35,11 @@ to:
 	 	plugin_event_hook( 'EVENT_VIEW_BUG_EXTRA', 'attachment_form' );
 		
 Save the file and then load the plugin to your Mantis/plugin directory
+
+If you need the Attachment section in the bug update page, add the following line:
+event_signal( 'EVENT_VIEW_BUG_FILES_2', array( $t_bug_id ) ); 
+Just above this line:
+define( 'BUGNOTE_VIEW_INC_ALLOW', true );
 
 ########################################################
 # 	Attachments version 2.02

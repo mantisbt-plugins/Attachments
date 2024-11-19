@@ -11,8 +11,11 @@ require_api( 'helper_api.php' );
 require_api( 'html_api.php' );
 require_api( 'lang_api.php' );
 
-
-$f_issue_id			= gpc_get_int( 'id' );
+if( isset( $_GET['id'] ) ) {
+	$f_issue_id			= @gpc_get_int( 'id' );
+} else { 
+	$f_issue_id			= @gpc_get_int( 'bug_id' );
+}
 $t_allow_file_upload = file_allow_bug_upload( $f_issue_id );
 ?>
 <div class="col-md-12 col-xs-12">
