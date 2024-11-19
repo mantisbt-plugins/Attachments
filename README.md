@@ -36,7 +36,7 @@ to:
 		
 Save the file and then load the plugin to your Mantis/plugin directory
 
-If you need the Attachment section in the bug update page, add the following line:
+If you need the Attachment section in the bug_update_page, add the following line:
 event_signal( 'EVENT_VIEW_BUG_FILES_2', array( $t_bug_id ) ); 
 Just above this line:
 define( 'BUGNOTE_VIEW_INC_ALLOW', true );
