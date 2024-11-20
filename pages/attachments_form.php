@@ -12,9 +12,9 @@ require_api( 'html_api.php' );
 require_api( 'lang_api.php' );
 
 if( isset( $_GET['id'] ) ) {
-	$f_issue_id			= @gpc_get_int( 'id' );
+	$f_issue_id			= gpc_get_int( 'id' );
 } else { 
-	$f_issue_id			= @gpc_get_int( 'bug_id' );
+	$f_issue_id			= gpc_get_int( 'bug_id' );
 }
 $t_allow_file_upload = file_allow_bug_upload( $f_issue_id );
 ?>
@@ -81,7 +81,7 @@ if( $t_allow_file_upload ) {
 				</div>
 			</td>
 			<td>
-				<input type="submit" class="btn btn-primary btn-white btn-round" value="<?php echo lang_get( 'add_file_button' ) ?>" />
+				<input type="submit" class="btn btn-primary btn-white btn-round" value="<?php echo plugin_lang_get( 'add_file_button' ) ?>" />
 			</td>
 		</tr>
 	</table>
