@@ -11,7 +11,9 @@ require_api( 'helper_api.php' );
 require_api( 'html_api.php' );
 require_api( 'lang_api.php' );
 
-if( isset( $_GET['id'] ) ) {
+// if( isset( $_GET['id'] ) ) {
+if( gpc_isset( 'id' ) ) {
+
 	$f_issue_id			= gpc_get_int( 'id' );
 } else { 
 	$f_issue_id			= gpc_get_int( 'bug_id' );
